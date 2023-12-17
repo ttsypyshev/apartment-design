@@ -3,11 +3,11 @@
 public class Moving : MonoBehaviour
 {
     public GeneralManager generalManager;
+    
     public GameObject player;
     public Camera camera;
 
-    public float speed = 0.05f;
-
+    private float speed = 0.05f;
     private bool f = false;
     private bool b = false;
     private bool r = false;

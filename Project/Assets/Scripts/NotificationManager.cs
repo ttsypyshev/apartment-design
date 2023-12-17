@@ -18,7 +18,7 @@ public class NotificationManager : MonoBehaviour
         time = 0f;
     }
 
-    void Update()
+    private void Update()
     {
         if (inputText != "")
         {
@@ -41,7 +41,7 @@ public class NotificationManager : MonoBehaviour
         }
     }
 
-    void CanvasMovement()
+    private void CanvasMovement()
     {
         // Получаем текущий взгляд камеры
         Vector3 gazeDirection = Camera.main.transform.forward;

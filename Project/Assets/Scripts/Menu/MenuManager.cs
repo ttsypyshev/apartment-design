@@ -25,7 +25,7 @@ public class MenuManager : MonoBehaviour
         CanvasDeactivation();
     }
 
-    void Update()
+    private void Update()
     {
         if (generalManager.menu && !statusSpawn)
         {
@@ -37,7 +37,7 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    void CanvasActivation()
+    private void CanvasActivation()
     {
         canvasPrefab.SetActive(true);
 
@@ -57,7 +57,7 @@ public class MenuManager : MonoBehaviour
         statusSpawn = true;
     }
 
-    void CanvasDeactivation()
+    private void CanvasDeactivation()
     {
         canvasPrefab.SetActive(false);
         menuPrefab.SetActive(false);

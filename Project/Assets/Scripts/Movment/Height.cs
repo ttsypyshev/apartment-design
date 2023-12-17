@@ -2,9 +2,11 @@
 
 public class Height : MonoBehaviour
 {
-    public GameObject player;
     public GeneralManager generalManager;
-    public float hspeed = 0.05f;
+    
+    public GameObject player;
+
+    private float hspeed = 0.05f;
 
     void Update()
     {
