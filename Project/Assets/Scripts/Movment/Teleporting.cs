@@ -2,14 +2,13 @@
 
 public class Teleporting : MonoBehaviour
 {
-    public GameObject teleportPoint;
     public GeneralManager generalManager;
+    
+    public GameObject teleportPoint;
     public GameObject player;
     public Camera camera;
-    public GameObject flat;
 
-    public float speed = 0.05f;
-
+    private float speed = 0.05f;
     private bool f = false;
     private bool b = false;
     private bool r = false;

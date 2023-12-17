@@ -27,7 +27,6 @@ public class GeneralManager : MonoBehaviour
 
     private void Start()
     {
-        // MenuImage.SetActive(false);
         CenterImage.SetActive(true);
     }
 
@@ -61,7 +60,6 @@ public class GeneralManager : MonoBehaviour
         if (movement && Input.GetKeyDown(KeyCode.Alpha2)) //Передвижение_телепортирование
         {
             print("Режим телепортирования");
-            // MenuImage.SetActive(false);
             CenterImage.SetActive(false);
 
             isTeleporting = !isTeleporting;
@@ -77,7 +75,6 @@ public class GeneralManager : MonoBehaviour
         if (movement && Input.GetKeyDown(KeyCode.Alpha3)) //Передвижение_ходьба
         {
             print("Режим ходьбы");
-            // MenuImage.SetActive(false);
             CenterImage.SetActive(false);
 
             isMoving = !isMoving;
@@ -93,7 +90,6 @@ public class GeneralManager : MonoBehaviour
         if (movement && Input.GetKeyDown(KeyCode.Alpha4)) //Передвижение_изменение высоты
         {
             print("Режим изменения высоты");
-            // MenuImage.SetActive(false);
             CenterImage.SetActive(false);
 
             isHeight = !isHeight;
@@ -124,7 +120,6 @@ public class GeneralManager : MonoBehaviour
         if (edit && Input.GetKeyDown(KeyCode.Alpha1)) //Редактирование_захват объекта
         {
             print("Режим захвата объекта");
-            // MenuImage.SetActive(false);
             CenterImage.SetActive(true);
 
             isChoiceObjects = !isChoiceObjects;
@@ -140,8 +135,7 @@ public class GeneralManager : MonoBehaviour
         if (edit && Input.GetKeyDown(KeyCode.Alpha3)) //Редактирование_пемещение объекта
         {
             print("Режим пемещения объекта");
-            // MenuImage.SetActive(false); ;
-            CenterImage.SetActive(true);
+            CenterImage.SetActive(false);
 
             isMovingObjects = !isMovingObjects;
             isChoiceObjects = false;
@@ -156,8 +150,7 @@ public class GeneralManager : MonoBehaviour
         if (edit && Input.GetKeyDown(KeyCode.Alpha4)) //Редактирование_наклон объекта
         {
             print("Режим наклона объекта");
-            // MenuImage.SetActive(false);
-            CenterImage.SetActive(true);
+            CenterImage.SetActive(false);
 
             isSlantObjects = !isSlantObjects;
             isMovingObjects = false;

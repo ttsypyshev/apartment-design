@@ -3,13 +3,15 @@ using UnityEngine;
 
 public class SpownObject : MonoBehaviour
 {
+    public ChoiceObjects choiceObjects;
+    
     public GameObject parentObject;
     public GameObject[] childObjects;
 
     private float spawnDistance = 3f;
     private int objectCount = 0;
 
-    void Start()
+    private void Start()
     {
         if (parentObject != null)
         {
@@ -41,6 +43,8 @@ public class SpownObject : MonoBehaviour
         // Спавним объект перед камерой с уникальным названием
         GameObject newObject = Instantiate(childObjects[numberObject], spawnPosition, Quaternion.identity);
         newObject.name = childObjects[numberObject].name + "_" + numberObject.ToString() + "_" + objectCount.ToString();
+        newObject.tag = "draggable";
+        choiceObjects.body = newObject;
         objectCount++;
     }
 }
