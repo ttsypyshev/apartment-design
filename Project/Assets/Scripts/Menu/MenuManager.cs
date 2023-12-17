@@ -7,7 +7,7 @@ public class MenuManager : MonoBehaviour
 
     public GameObject canvasPrefab;
     public GameObject menuPrefab;
-    public float spawnDistance = 0.5f;
+    private float spawnDistance = 0.5f;
     private bool statusSpawn = false;
 
     public GameObject[] pages;
@@ -15,15 +15,13 @@ public class MenuManager : MonoBehaviour
 
     private void Start()
     {
-        print(pages.Length);
         // Назначаем каждой кнопке свою функцию при нажатии
-        for (int i = 0; i < pageButtons.Length; i++)
+        for (int i = pageButtons.Length - 1; i >= 0; i--)
         {
             int pageIndex = i; // Необходимо для передачи значения в замыкание
             pageButtons[i].onClick.AddListener(() => OnButtonClick(pageIndex));
-            print(pages.Length);
+            OnButtonClick(i);
         }
-
         CanvasDeactivation();
     }
 
@@ -31,7 +29,6 @@ public class MenuManager : MonoBehaviour
     {
         if (generalManager.menu && !statusSpawn)
         {
-            print(pages.Length);
             CanvasActivation();
         }
         else if (!generalManager.menu && statusSpawn)

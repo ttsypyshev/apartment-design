@@ -141,7 +141,7 @@ public class GeneralManager : MonoBehaviour
         {
             print("Режим пемещения объекта");
             // MenuImage.SetActive(false); ;
-            CenterImage.SetActive(false);
+            CenterImage.SetActive(true);
 
             isMovingObjects = !isMovingObjects;
             isChoiceObjects = false;
@@ -157,7 +157,7 @@ public class GeneralManager : MonoBehaviour
         {
             print("Режим наклона объекта");
             // MenuImage.SetActive(false);
-            CenterImage.SetActive(false);
+            CenterImage.SetActive(true);
 
             isSlantObjects = !isSlantObjects;
             isMovingObjects = false;
