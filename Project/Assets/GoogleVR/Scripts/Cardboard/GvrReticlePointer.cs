@@ -288,4 +288,9 @@ public class GvrReticlePointer : GvrBasePointer
         mesh.Optimize();
 #endif  // !UNITY_5_5_OR_NEWER
     }
+
+    public void OnPointerExit(RaycastResult raycastResult2, bool isInteractive)
+    {
+        throw new System.NotImplementedException();
+    }
 }
