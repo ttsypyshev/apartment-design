@@ -14,7 +14,9 @@ public class MainMenu : MonoBehaviour
 
     void Update()
     {
-        if (!generalManager.menu)
+        return;
+        
+        // if (!generalManager.menu)
         {
             return;
         }

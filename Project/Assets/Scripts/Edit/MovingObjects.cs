@@ -2,6 +2,7 @@
 
 public class MovingObjects : MonoBehaviour
 {
+    public NotificationManager notificationManager;
     public ChoiceObjects choiceObjects;
     public GeneralManager generalManager;
     public GameObject body;
@@ -11,8 +12,6 @@ public class MovingObjects : MonoBehaviour
     public float zR;
     public float speed = 0.05f;
 
-    public string[] text = new string[1] { "Объект не выбран"};
-
     void Update()
     {
         if (!generalManager.isMovingObjects || !generalManager.edit)
@@ -21,8 +20,7 @@ public class MovingObjects : MonoBehaviour
         }
         if (!choiceObjects.condition)
         {
-            generalManager.time = 3;
-            generalManager.notificftionText.text = text[0];
+            notificationManager.inputText = "Объект не выбран";
             return;
         }
 

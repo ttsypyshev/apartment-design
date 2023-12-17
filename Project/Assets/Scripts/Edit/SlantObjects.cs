@@ -2,9 +2,9 @@
 
 public class SlantObjects : MonoBehaviour
 {
+    public NotificationManager notificationManager;
     public ChoiceObjects choiceObjects;
     public GeneralManager generalManager;
-    public string[] text = new string[1] { "Объект не выбран" };
 
     public float speed = 10f;
 
@@ -14,10 +14,10 @@ public class SlantObjects : MonoBehaviour
         {
             return;
         }
+
         if (!choiceObjects.condition)
         {
-            generalManager.time = 3;
-            generalManager.notificftionText.text = text[0];
+            notificationManager.inputText = "Объект не выбран";
             return;
         }
 
