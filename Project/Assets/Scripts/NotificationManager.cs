@@ -7,7 +7,7 @@ public class NotificationManager : MonoBehaviour
 
     public GameObject canvasPrefab;
     public GameObject notificationPrefab;
-    public float spawnDistance = 0.5f;
+    private float spawnDistance = 0.5f;
 
     private float time;
     private Text notificationText;
