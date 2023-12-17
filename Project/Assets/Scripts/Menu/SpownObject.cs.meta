@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 304f1a9f4a2e67d429aac15487913336
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - choiceObjects: {instanceID: 0}
+  - player: {fileID: 6824138387634007285, guid: 2f7fec63dd338584b863ac5fcbd7b525,
+      type: 3}
+  - onePrefab1: {instanceID: 0}
+  - onePrefab2: {instanceID: 0}
+  - onePrefab3: {instanceID: 0}
+  - onePrefab4: {instanceID: 0}
+  - twoPrefab1: {instanceID: 0}
+  - twoPrefab2: {instanceID: 0}
+  - twoPrefab3: {instanceID: 0}
+  - twoPrefab4: {instanceID: 0}
+  - threePrefab1: {instanceID: 0}
+  - threePrefab2: {instanceID: 0}
+  - threePrefab3: {instanceID: 0}
+  - threePrefab4: {instanceID: 0}
+  - fourPrefab1: {instanceID: 0}
+  - fourPrefab2: {instanceID: 0}
+  - fourPrefab3: {instanceID: 0}
+  - fourPrefab4: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
