@@ -2,12 +2,12 @@
 
 public class ChoiceObjects : MonoBehaviour
 {
+    public NotificationManager notificationManager;
     public GeneralManager generalManager;
     public Camera camera;
     public GameObject body;
     public GameObject CenterImage;
     public string bodyName;
-    public string[] text = new string[2] {"Объект выбран","Объект удалён"};
 
     public bool condition = false;
 
@@ -36,22 +36,22 @@ public class ChoiceObjects : MonoBehaviour
                     body = GameObject.Find(bodyName);
                     condition = true;
                     print(bodyName);
-                    generalManager.time = 3;
-                    generalManager.notificftionText.text = text[0];
+                    notificationManager.inputText = "Объект выбран";
                     return;
                 }
+
                 if (hit.collider.gameObject.tag == "body1")
                 {
                     bodyName = hit.collider.gameObject.transform.parent.gameObject.name;
                     body = GameObject.Find(bodyName);
                     condition = true;
                     print(bodyName);
-                    generalManager.time = 3;
-                    generalManager.notificftionText.text = text[0];
+                    notificationManager.inputText = "Объект выбран";
                     return;
                 }
             }
         }
+
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             if (!condition)
@@ -67,10 +67,10 @@ public class ChoiceObjects : MonoBehaviour
                         print("Удаление объекта");
                         print(hit.collider.gameObject.name);
                         Destroy(body);
-                        generalManager.time = 3;
-                        generalManager.notificftionText.text = text[1];
+                        notificationManager.inputText = "Объект удалён";
                         return;
                     }
+
                     if (hit.collider.gameObject.tag == "body1")
                     {
                         bodyName = hit.collider.gameObject.transform.parent.gameObject.name;
@@ -79,8 +79,7 @@ public class ChoiceObjects : MonoBehaviour
                         print("Удаление объекта");
                         print(bodyName);
                         Destroy(body);
-                        generalManager.time = 3;
-                        generalManager.notificftionText.text = text[1];
+                        notificationManager.inputText = "Объект удалён";
                         return;
                     }
                 }
@@ -91,8 +90,7 @@ public class ChoiceObjects : MonoBehaviour
                 print(bodyName);
                 Destroy(body);
                 condition = false;
-                generalManager.time = 3;
-                generalManager.notificftionText.text = text[1];
+                notificationManager.inputText = "Объект удалён";
                 bodyName = "";
             }
         }
