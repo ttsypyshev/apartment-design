@@ -6,19 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="975ccdaa-ef7f-41c1-be55-734183092f2f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Edit/ChoiceObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Edit/ChoiceObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Edit/MovingObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Edit/MovingObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Edit/SlantObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Edit/SlantObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GeneralManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GeneralManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/MenuManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Menu/SpownObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Menu/SpownObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movment/Height.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movment/Height.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movment/Moving.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movment/Moving.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Movment/Teleporting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Movment/Teleporting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NotificationManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NotificationManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +106,7 @@
       <workItem from="1702819776951" duration="5269000" />
       <workItem from="1702825145957" duration="18609000" />
       <workItem from="1702847913454" duration="8882000" />
+      <workItem from="1702889751692" duration="2004000" />
     </task>
     <servers />
   </component>
